@@ -1,0 +1,85 @@
+# 简历内容
+resume_content = """
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: pink;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: orange;
+        }
+        .profile-pic {
+            display: block;
+            margin: 20px auto;
+            border-radius: 70%;
+            width: 150px; /* 设置图片宽度 */
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style-type: none; /* 去掉列表符号 */
+            padding-left: 0; /* 去掉左侧内边距 */
+        }
+        li {
+            margin-bottom: 10px; /* 列表项之间的间距 */
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap; /* 支持换行 */
+        }
+        .skill {
+            background-color: yellow;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-bottom: 10px; /* 列表项之间的间距 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>个人简历</h1>
+
+        <img src="profile.jpg" alt="个人照片" class="profile-pic"> <!-- 图片路径 -->
+
+        <div class="section">
+            <h2>个人信息</h2>
+            <p><strong>姓名:</strong> 余诺</p>
+            <p><strong>电话:</strong> 852-59583447</p>
+            <p><strong>邮箱:</strong> yn20020820@126.com</p>
+            <p><strong>地址:</strong>江苏省南京市江宁区东山街道盈家春天花园</p>
+        </div>
+
+     
+
+    </div>
+</body>
+</html>
+"""
+
+# 将内容写入HTML文件
+with open("resume.html", "w", encoding="utf-8") as file:
+    file.write(resume_content)
+
+print("个人简历已生成，文件名为 resume.html")
