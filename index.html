@@ -1,0 +1,116 @@
+# 简历内容
+resume_content = """
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: pink;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: orange;
+        }
+        .profile-pic {
+            display: block;
+            margin: 20px auto;
+            border-radius: 70%;
+            width: 150px; /* 设置图片宽度 */
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style-type: none; /* 去掉列表符号 */
+            padding-left: 0; /* 去掉左侧内边距 */
+        }
+        li {
+            margin-bottom: 10px; /* 列表项之间的间距 */
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap; /* 支持换行 */
+        }
+        .skill {
+            background-color: yellow;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-bottom: 10px; /* 列表项之间的间距 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>个人简历</h1>
+        <img src="profile.jpg" alt="个人照片" class="profile-pic"> <!-- 图片路径 -->
+        <div class="section">
+            <h2>基本信息</h2>
+            <p><strong>姓名:</strong> 余诺</p>
+            <p><strong>电话:</strong> 852-59583447</p>
+            <p><strong>邮箱:</strong> yn20020820@126.com</p>
+            <p><strong>地址:</strong>江苏省南京市江宁区东山街道盈家春天花园</p>
+        </div>
+        <div class="section">
+            <h2>教育背景</h2>
+            <p><strong>吉林大学珠海学院</strong> - 数据科学与大数据技术专业 (2015 - 2019)</p>
+            <p><strong>主修课程</strong> - 数据可视化 Python数据分析技术 数据结构与算法课程设计 操作系统等</p>
+        </div>
+        <div class="section">
+            <h2>工作经历</h2>
+            <p><strong>南京金仁环保科技有限公司</strong> - 行政助理及科研助理 (2022 - 2023)</p>
+            <ul>
+                <li>•负责公司招聘岗位信息维护。</li>
+                <li>•统计汇总招聘信息以及协助处理其他分配工作。</li>
+                <li>•负责现有在市场使用的产品数据分类分析的相关工作。</li>
+                <li>•协助项目研究、实验设施运行维护。</li>
+                <li>•指导实习生，帮助他们快速融入团队。</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>技能</h2>
+            <div class="skills">
+                <div class="skill">Python</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Django</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">普通话</div>
+                <div class="skill">英语六级</div>
+                <div class="skill">良好的沟通能力</div>
+                <div class="skill">团队合作精神</div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>获奖实践证明</h2>
+            <h3>获奖时间：2020.10</h3>
+            <p><strong>描述：</strong>•军训期间被评为“优秀学员”。</p>
+            <h3>获奖时间：2021.03</h3>
+            <p><strong>描述：</strong>•获得阿里云大数据应用学院第二届职业认知大赛二等奖。</p>
+            <h3>获奖时间：2021.04</h3>
+            <p><strong>描述：</strong>获得阿里云大数据应用学院第一节“论而求知，辩以明理”新生辩论赛决赛季军。</p>
+        </div>
+    </div>
+</body>
+</html>
+"""
+# 将内容写入HTML文件
+with open("resume.html", "w", encoding="utf-8") as file:
+    file.write(resume_content)
+print("个人简历已生成，文件名为 resume.html")    
